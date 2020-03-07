@@ -7,8 +7,9 @@
 
 using std::array;
 
-const int xWidth = 25;
-const int yWidth = 25;
+const int xWidth = 30;
+const int yWidth = 30;
+const int livingCells = 200;
 
 // functions say hello
 int countDeadCells(array<array<bool, xWidth>, yWidth>& gameField, int x, int y);
@@ -87,7 +88,7 @@ int main() {
     // generate random living cells
     int x, y;
     int i = 1;
-    while(i < 150) {
+    while(i < livingCells) {
         /* generate random numbers between 0 and Widths: */
         x = rand() % xWidth;
         y = rand() % yWidth;
